@@ -8,6 +8,8 @@ Gris claro: #ebebeb;
 Verde: #39b54a;
 **/
 * {
+    margin: 0;
+    Padding: 0;
     box-sizing:border-box
 }
 
@@ -64,32 +66,36 @@ body{
 
 main{
 text-align: left;
-width: 90vw;
-margin: auto;
+background-color:  #ebebeb;
+padding:0%;
+margin: 5px;
+
 }
 
 div {
     background-color: white;
     margin:10px;
     border: 1px solid #ebebeb;
-    
+    box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
+    -webkit-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
+    -moz-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
 
 }
 main div img {
 width: 200px;
 text-align: left;
-margin-top: 10;
+margin: 10px;
 }
 
-h1{
+main h1{
 font-size: 24px;
-margin: 10;
+margin-top: 10px;
 }
 
 div ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
     border-top: 1px solid #ebebeb;
 }
 
@@ -113,7 +119,7 @@ font-size: 16px;
 
 footer{
 text-align: center;
-margin-top: 20;
+margin-top: 20px;
 }
 
 footer section i{
@@ -126,15 +132,15 @@ footer section i{
 
 footer section h2{
     font-size: 18px;
-    margin: 1;
+    margin: 1px;
 }
 
 footer section p{
     font-size: 12px;
-    margin-bottom: 5;
+    margin-bottom: 5px;
 }
 .copyright{
-    margin-bottom: 15
+    margin-bottom: 15px
 }
 
 @media (min-width: 780px){
@@ -177,16 +183,17 @@ footer section p{
     .ultima-busqueda{
         display: flex;
         justify-content: space-around;
-        margin:0;
-        max-width: 780;
-        padding: 20px
+        margin:10px;
+        padding: 20px;
+        flex-wrap: wrap;
     }
     
     .ofertas{
         display: flex;
         justify-content: space-around;
-        max-width: 780;
-        padding: 20px
+        margin:10px;
+        padding: 20px;
+        flex-wrap: wrap;
     }
 }
 
@@ -220,4 +227,5 @@ footer section p{
     .main-navbar a {
              font-size: 19px;
     }
+ 
 }
