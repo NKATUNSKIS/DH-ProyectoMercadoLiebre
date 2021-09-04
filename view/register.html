@@ -57,49 +57,46 @@ rel="stylesheet" />
     <main>
         <form action="#" method="get" class="registro-form">
             <div>
-                <input type="text" placeholder="Nombre y apellido" name="NombreApellido">
+                <input class="text" type="text" placeholder="Nombre y apellido" name="NombreApellido">
             </div>
             <div>
                 
-                <input type="text" placeholder="Nombre Usuario" name="Nombredeusuari">
+                <input class="text" type="text" placeholder="Nombre Usuario" name="Nombredeusuari">
             </div>
             <div>
                 <label class="labelform">Fecha Nacimiento</label>
-                <input type="date" name='fecha' placeholder="Fecha Nacimiento">
+                <input class="date" type="date" name='fecha' placeholder="Fecha Nacimiento">
             </div>
             <div>
                 
-                <input type="text" placeholder="Domiilio" name="domicilio">
+                <input class="text" type="text" placeholder="Domiilio" name="domicilio">
             </div>
-            <div>
-                <label class="labelform">Perfil Usuario</label>
-                <label for=""></label>
-                    Compra<input type="radio" value="compra" name="rb-testoperation" >
+            <div class="userprofile">
+                <label class="labelform">Perfil de Usuario </label>
+                <label class="compra" for="compra">Compra <input type="radio" value="compra" name="rb-testoperation" >
                 </label>
-                <label for="">
-                    Vende<input type="radio" value='venta' name="rb-testoperation" >
-                </label>
+                <label class="venta" for="venta"> Vende<input type="radio" value='venta' name="rb-testoperation" > </label>
             </div>
-            <div>
-                <label for="categorias" >  Interes<input type="checkbox" value="Interes" name="Interes"></label>
-                <label for="Electro">Electro <input type="checkbox" value="Electro" /></label>
-                <label for="Moda">Moda <input type="checkbox" value="Moda" /></label>
-                <label for="Hogar">Hogar <input type="checkbox" value="Hogar" /></label>
-                <label for="Juguetería">Juguetería <input type="checkbox" value="Juguetería" /></label>
-                <label for="Vida sana">Vida sana <input type="checkbox" value="Vidasana" /></label>
+            <div class="categories">
+                <label class="labelform">Intereses</label>
+                <label class="labelintereses" for="Electro">Electro <input type="checkbox" value="Electro" /></label>
+                <label class="labelintereses" for="Moda">Moda <input type="checkbox" value="Moda" /></label>
+                <label  class="labelintereses" for="Hogar">Hogar <input type="checkbox" value="Hogar" /></label>
+                <label class="labelintereses" for="Juguetería">Juguetería <input type="checkbox" value="Juguetería" /></label>
+                <label class="labelintereses" for="Vida sana">Vida sana <input type="checkbox" value="Vidasana" /></label>
               
             </div>
-            <div>
-                <label for="img">Suba su imagen</label>
+            <div class="imagen">
+                <label for="img">Suba su foto de usuario</label>
                 <input type="file" name="img" >
             </div>
             <div>
-                <label for="pass">Contraseña</label>
-                <input type="password" name="pass">
+                <input class="text" type="password" placeholder = "Contraseña" name="pass">
+                <input class="text" type="password" placeholder = "Confirmar contraseña" name="pass">
             </div>
             <div>
-                <input type="submit" value="Enviar" name="enviar">
-                <input type="reset" value="Limpiar" name="limpiar">
+                <input class = "submit" type="submit" value="Enviar" name="enviar">
+                <input class = "reset" type="reset" value="Limpiar" name="limpiar">
 
             </div>
             
