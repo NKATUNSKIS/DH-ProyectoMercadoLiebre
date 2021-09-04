@@ -11,6 +11,12 @@ app.use(express.static(publicFolderPath))
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/index.html"));
 });
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/register.html"));
+});
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/login.html"));
+});
 
-app.listen(puerto,()=>{console.log('Server is runnig in the Port ' + puerto);
+app.listen(puerto,()=>{console.log(`Server is runnig in the Port ${puerto}`);
   });
