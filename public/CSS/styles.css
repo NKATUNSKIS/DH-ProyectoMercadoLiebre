@@ -33,6 +33,25 @@ body{
     max-width: 300px;
 }
 
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: white;
+    border-radius: 5%;
+    margin: 20px;
+}
+
+.search-input{
+    border:none;
+    width: 85%;
+    margin-left: 2px;
+}
+.searchbar i{
+    margin-right: 2px;
+}
+
+
 .hamburger-button{
     background-color: #03264C;
     color: white;
@@ -72,62 +91,84 @@ padding: 5px
     margin: auto
 }
 
+
+
 main{
 text-align: left;
 background-color:  #ebebeb;
-padding: 5px
 }
+
+.banner{
+    width: 100vw;
+    height: auto;
+}
+
+
+main h1{
+font-size: 24px;
+padding: 10px;
+}
+
+
+.ultima-busqueda, .ofertas{
+    display: flex;
+    justify-content: space-around;
+    margin:10px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
 
 .detalle-producto {
     background-color: white;
     margin:10px;
     border: 1px solid #ebebeb;
-    box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
-    -webkit-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
-    -moz-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
     max-width: 250px;
 }
 
-
-.ultima-busqueda{
-    display: flex;
-    justify-content: space-around;
-    margin:10px;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.ofertas{
-    display: flex;
-    justify-content: space-around;
-    margin:10px;
-    padding: 20px;
-    flex-wrap: wrap;
+.detalle-producto:hover {
+    box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
+    -webkit-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
+    -moz-box-shadow: -1px 2px 74px -17px rgba(0,0,0,0.73);
 }
 
 .detalle-producto img {
-width: 80%;
+width: 90%;
 text-align: center;
-margin: 10px;
+margin: 5px;
 }
 
-main h1{
-font-size: 24px;
-padding-top: 10px;
-padding-left: 5px;
+
+.detalle-producto i{
+color: #39b54a;
+background-color: floralwhite;
+margin:5px;
+padding: 5px;
+border: 1px solid #39b54a;
+border-radius: 50% ;
+position: relative;
+left: 200px;
+bottom:-20px;
+transition: all 1s
 }
+
+.detalle-producto i:hover{
+    transform: rotate(-90deg);
+        }
 
 .detalle-producto ul{
     list-style: none;
-    margin: 5px;
-    padding: 5px;
+display: flex;
+flex-wrap: wrap;
+    padding: 20px 10px 10px;
     border-top: 1px solid #ebebeb;
 }
 
-.logoenvio {
+
+/* .logoenvio {
 color: #39b54a;
 margin:5px
-}
+} */
 
 .precios{
 font-size: 18px;
@@ -136,11 +177,18 @@ font-size: 18px;
 .descuentos{
 font-size: 16px;
 color: #39b54a;
+margin-left: 20px;
 }
 
 .descripciones{
-font-size: 16px;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
 }
+
+.detalle-producto:hover .descripciones{
+    Display: block;
+        }
 
 footer{
 text-align: center;
@@ -248,6 +296,11 @@ width: 50px;
 
     .logo{
         width: 30%;
+    }
+
+    .searchbar{
+        width: 80%;
+        height: 35px;
     }
 
     .copy-header{
