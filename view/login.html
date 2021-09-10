@@ -21,52 +21,59 @@ rel="stylesheet" />
 <body>
     <header class="main-header">
     
-       <article class="main-header-top-bar"> 
-            <img src="./img/logo-mercado-liebre.svg" class="logo" > 
-            <h2 class="copy-header">
-                <i class="fas fa-hand-holding-usd"></i>
-                Comprá en cuotas y sin tarjeta de crédito
-            </h2>
-        </article> 
-    <a href="#" class="hamburger-button">
-            <i class="fas fa-bars"></i>
-    </a>
-    
-        <nav class="main-navbar">
-            <ul class="left-navbar">
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul class="right-navbar">
-                <li><a href="/register">
-                    <i class="far fa-id-card"></i>
-                    Creá tu cuenta</a></li>
-                <li><a href="#">
-                    <i class="fas fa-sign-in-alt"></i>
-                    Ingresá</a></li>
-                <li><a href="/login">
-                    <i class="fas fa-shopping-basket"></i>
-                    Mis compras</a></li>
-            </ul>
-        </nav>
-
-        
-    </header>
-
-        <main>
-            <form action="#" method="get" class="registro-form">
+        <article class="main-header-top-bar"> 
+             <img src="./img/logo-mercado-liebre.svg" class="logo" > 
+             <form class="searchbar"  action="#" method="POST">
+                 <input class = "search-input" type="text" placeholder="Buscá productos, marcas y más">
+ 
+                 <i class = "search-icon fas fa-search" aria-hidden= "true">
+                      </i> 
+             </form>
+             <h2 class="copy-header">
+                 <i class="fas fa-hand-holding-usd"></i>
+                 Comprá en cuotas y sin tarjeta de crédito
+             </h2>
+         </article> 
+     <a href="/" class="hamburger-button">
+             <i class="fas fa-bars"></i>
+     </a>
+     
+         <nav class="main-navbar">
+             <ul class="left-navbar">
+                 <li><a href="/">Ofertas</a></li>
+                 <li><a href="/">Tiendas Oficiales</a></li>
+                 <li><a href="/">Vender</a></li>
+                 <li><a href="/">Ayuda</a></li>
+             </ul>
+             <ul class="right-navbar">
+                 <li><a href="/register">
+                     <i class="far fa-id-card"></i>
+                     Creá tu cuenta</a></li>
+                 <li><a href="/login">
+                     <i class="fas fa-sign-in-alt"></i>
+                     Ingresá</a></li>
+                 <li><a href="/">
+                     <i class="fas fa-shopping-basket"></i>
+                     Mis compras</a></li>
+             </ul>
+         </nav>
+ 
+         
+     </header>
+     <main>
+         <img src="./img/img-home-banner.jpg" class ="banner" >  
+         <h1>Ingresá a tu cuenta</h1>
+            <form action="#" method="get" class="login-form">
                 <div> 
-                    <input type="text" placeholder="Nombre Usuario" name="Nombredeusuario">
+                    <input class="text" type="text" placeholder="Nombre Usuario" name="Nombredeusuario">
+           
+        
+            
+                    <input class="text" type="password"  placeholder="Contraseña" name="pass">
                 </div>
-             
-                <div>
-                    <input type="password"  placeholder="Contraseña" name="pass">
-                </div>
-                <div>
-                    <input type="submit" value="Enviar" name="enviar">
-                </div>
+                
+                <input class = "submit-login" type="submit" value="Enviar" name="enviar">
+                
             </form>
     </main>
 

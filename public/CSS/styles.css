@@ -96,6 +96,7 @@ padding: 5px
 main{
 text-align: left;
 background-color:  #ebebeb;
+padding-bottom: 20px;
 }
 
 .banner{
@@ -165,10 +166,6 @@ flex-wrap: wrap;
 }
 
 
-/* .logoenvio {
-color: #39b54a;
-margin:5px
-} */
 
 .precios{
 font-size: 18px;
@@ -221,23 +218,24 @@ padding: 10px
 
 /* register* mobile firts*/
 
-.registro-form{
+.registro-form, .login-form{
     width:90%;
     margin-left:5%;
+    margin-bottom: 10px;
 }
 
-.registro-form div{
+.registro-form div, .login-form div {
     margin: 20px 0;
-    background-color: #ebebeb;
 }
-.registro-form div input{
+.registro-form div input, .login-form div input{
     display: block;
     width:100%;
     font-size: 17px;
-    border-radius: 8%;
     padding: 2px;
-    border-color: gray;
+    border: none;
+    background-color: white;
     margin-top: 5px;
+    padding: 6px
 }
 
 .userprofile, .categories{
@@ -280,8 +278,17 @@ flex-direction: column;
 .submit, .reset{
 background-color: dodgerblue;
 color: white;
-border-radius: 10%;
-width: 50px;
+width: 30%;
+position:relative;
+left: 20%;
+}
+
+.submit-login{
+background-color: dodgerblue;
+color: white;
+width: 30%;
+position:relative;
+left: 35%;
 }
 
 
@@ -342,6 +349,28 @@ width: 50px;
             padding:5px
 
         }
+
+        /* Register/login form*/
+
+        .registro-form, .login-form{
+            width:70%;
+            margin-left:15%;
+            margin-bottom: 20px;
+            height: auto;
+        }
+
+        .submit, .reset{
+            width: 15%;
+            left: 70%;
+            }
+        
+         .submit-login{
+                background-color: dodgerblue;
+                color: white;
+                width: 15%;
+                position:relative;
+                left: 85%;
+                }
 
 }
 
